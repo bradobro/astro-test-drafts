@@ -7,4 +7,10 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://example.com',
 	integrations: [mdx(), sitemap()],
+	markdown: {
+		drafts: false
+	},
+	mdx: {
+		drafts: false
+	}
 });
